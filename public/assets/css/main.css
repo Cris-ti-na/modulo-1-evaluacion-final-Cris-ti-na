@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  border: 1px solid red; }
+
+.page__header {
+  border: 1px solid red;
+  height: 568px;
+  width: 100 wh; }
+  .page__header--hero {
+    background-image: linear-gradient(white, 0.5 25%, black), url("http://placekitten.com/568/320");
+    height: 568px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+
+.page__footer {
+  border: 1px solid red; }
+
+.main__list {
+  padding-left: 2rem; }
+
+/*# sourceMappingURL=main.css.map */
