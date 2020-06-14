@@ -1,3 +1,5 @@
+/* FONTS */
+/* COLORS */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -307,7 +309,11 @@ template {
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: inherit; }
+
+ul {
+  list-style-type: none; }
 
 body {
   border: 1px solid red; }
