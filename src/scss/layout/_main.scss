@@ -1,3 +1,25 @@
-.page_main {
+.page__main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    
+    &--section1 {
+        padding: 30px 15px 45px 15px;
+        
+        small {
+            color: $color-aux;
+            text-transform: capitalize;
+        }
+        h2 {
+            font-size: $font-size-t3;
+        }
+        p {
+            color: $color-medium;
+        }
+    }
+
+    &--section2 {
+        background-color: $color-bk1;
+        padding: 30px 15px 60px 15px;
+    }
 }

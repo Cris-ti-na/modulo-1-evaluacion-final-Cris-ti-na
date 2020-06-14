@@ -4,37 +4,50 @@
   display: flex;
   
   &--menu {
-    display: inline-block;
     height: 44px;
     width: 44px;
     background-color: $color-menu;
+    display: inline-block;    
     position: fixed;
     align-items: center;
+    justify-content: center;
         
     & img {
-      padding: 15px 14px;
-      width: 14px;
+    padding: 14px;      
     }
 
   }
 
   &--hero {
     width: 100%;
-    background-image:url(../images/cover.jpg);
+    background-blend-mode: (multiply);
+    background-image: linear-gradient(to bottom, $color-primary 0.5 25%, $color-secondary);
+    background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
     h1 {
+      padding-top: 50vh;
+      padding-bottom: 10px;
       color: $color-secondary;
       text-transform: uppercase;
       line-height: 55px;
       font-size: $font-size-h1;
+      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+      margin: 0;
     }
 
     p {
       color: $color-secondary;
+      padding-bottom: 45px;
+       
     }
 
     a {
@@ -42,13 +55,11 @@
       height: 45px;
       border-radius: 50%;
       background-color: $color-secondary;
-      border-radius: 22.5px;
-      align-items: center;
+      
+      img {
+        padding-top: 13px;
+      }
     }
 
   }
-}  
-  
-
- 
-
+}
