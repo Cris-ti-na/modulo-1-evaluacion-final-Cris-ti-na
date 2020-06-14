@@ -1,5 +1,8 @@
-body {
+html {
+  font-size: $font-size;
+  font-family: $font-primary;
+}
 
-  border: 1px solid red;
-
+header, main, footer {
+  border: 1px solid pink;
 }
