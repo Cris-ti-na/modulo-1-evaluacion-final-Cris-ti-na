@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Modulo 1 Evaluación Final</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
@@ -12,21 +13,20 @@
   <body>
     <div class="page">
       <header class="page__header">
-        <div class="page__header--menu">
-          <a href="http://adalab.es" target="_blank" title="Go to Adalab website">
-            <img src="/src/images/ico-menu.svg" alt="Menu" title="Menu icon">
-          </a>
-        </div>
+        <a class="page__header--menu" href="http://adalab.es" target="_blank" title="Go to Adalab website">
+          <img src="./images/ico-menu.png" alt="Menu icon">
+        </a>
+        
         <div class="page__header--hero">
           <h1>
-            Anonymous proxy
+            Anonymous Proxy
           </h1>
           <p>
             In hac habitasse platea dictumst.
           </p>
           <a href="#section2" title="Scroll down">
-            <button class="page__header--button">
-              <img src="/src/images/ico-scroll-down.svg"  alt="Scroll down">
+            <button>
+              <img src="./images/ico-scroll-down.svg"  alt="Scroll down">
             </button>
           </a>
         </div>
@@ -43,16 +43,16 @@
           <p>
             donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. vivamus semper sodales rutrum.
           </p>
-          <a href="">Go</a>
+          <a href="#" title="Go to the article">Go</a>
         </section>
 
-        <section class="page__main--section2">
+        <section class="page__main--section2" id="section2">
           <h2>
             3 reasons to purchase
           </h2>
           
-          <div>
-            <article>
+          <div class="grid">
+            <article class="grid__art1">
               <h3>
                 Ut sed metus
               </h3>
@@ -60,7 +60,7 @@
                 Lorem ipsum dolor sit amet, consectetur.
               </p>
             </article>
-            <article>
+            <article class="grid__art2">
               <h3>
                 Curabitur ac erat
               </h3>
@@ -68,7 +68,7 @@
                 Mauris mattis urna quis lorem molestie.
               </p>
             </article>
-            <article>
+            <article class="grid__art3">
               <h3>
                 Morbi dictum
               </h3>
@@ -83,7 +83,7 @@
       </main>
 
       <footer class="page__footer">
-        <div class="left-links">
+        <div class="page__footer--llinks">
           <nav>
             <ul>
               <li>
@@ -104,7 +104,8 @@
             </ul>
           </nav>
         </div>
-        <div class="right-links">
+
+        <div class="page__footer--links">
           <nav>
             <ul>
               <li>
@@ -119,14 +120,15 @@
             </ul>
           </nav>
         </div>
-        <small>
-          &copy; 2017
 
-          we <3 components
-          
-        </small>
+        <div>
+          <small>
+            &copy; 2017
+          </small> 
+          <p>we <span class="page__footer--heart">❤︎</span> components</p>
+        </div>
+
       </footer>
-
     </div>
   </body>
 </html>

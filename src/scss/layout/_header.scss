@@ -1,16 +1,50 @@
 .page__header {
-  height: 100vw;
-  width: 100vh;
-  background-image:url(../images/cover.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  
+  &--menu {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-color: $color-menu;
+    position: fixed;
+    align-items: center;
+        
+    & img {
+      padding: 15px 14px;
+      width: 14px;
+    }
+
+  }
+
   &--hero {
-    background-image:
-      linear-gradient((white, 0.5) 25%, (black)),
-      url("http://placekitten.com/568/320");
-    height: 100vh;
-    background-position: center;
+    width: 100%;
+    background-image:url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-position: center;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+
+    h1 {
+      color: $color-secondary;
+      text-transform: uppercase;
+      line-height: 55px;
+      font-size: $font-size-h1;
+    }
+
+    p {
+      color: $color-secondary;
+    }
+
+    a {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: $color-secondary;
+      border-radius: 22.5px;
+      align-items: center;
+    }
 
   }
 }  
