@@ -14,11 +14,20 @@
         padding: 45px 39px;
     }
 
+    @include forPc {
+        padding: 45px 370px;
+    }
+    
     &--llinks, &--rlinks {
         text-transform: uppercase;
         line-height: 30px;
         color: $color-secondary;
         padding-bottom: 30px;
+        nav ul li a {
+            &:hover {
+                color: $color-button;
+            }
+        }
 
         @include forTablet {
             padding-bottom: 0;

@@ -418,11 +418,16 @@ header, main, footer {
       text-align: left;
       align-items: start;
       padding: 45px 39px; } }
+  @media all and (min-width: 1200px) {
+    .page__footer {
+      padding: 45px 370px; } }
   .page__footer--llinks, .page__footer--rlinks {
     text-transform: uppercase;
     line-height: 30px;
     color: white;
     padding-bottom: 30px; }
+    .page__footer--llinks nav ul li a:hover, .page__footer--rlinks nav ul li a:hover {
+      color: #f26002; }
     @media all and (min-width: 768px) {
       .page__footer--llinks, .page__footer--rlinks {
         padding-bottom: 0;
