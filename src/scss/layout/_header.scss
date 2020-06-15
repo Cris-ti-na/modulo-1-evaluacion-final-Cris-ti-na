@@ -43,12 +43,31 @@
       font-size: $font-size-h1;
       text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
       margin: 0;
+
+      @include forTablet {
+        font-size: $font-title-tablet;
+        line-height: 106px;
+      }
+
+      @include forPc {
+        font-size: $font-title-pc;
+        line-height: 132px;
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 50vh 275px 10px;
+      }
     }
 
     p {
       color: $color-secondary;
       padding-bottom: 45px;
-       
+
+      @include forTablet {
+        font-size: $font-size-t3;
+      }
+
+      @include forPc {
+        font-size: $font-size-t3;
+      }  
     }
 
     a {
