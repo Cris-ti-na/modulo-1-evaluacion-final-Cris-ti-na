@@ -8,14 +8,27 @@
         
         small {
             color: $color-aux;
+            font-size: $font-size-small;
+            line-height: 30px;
             text-transform: capitalize;
         }
         h2 {
             font-size: $font-size-t3;
+            line-height: 30px;
+            padding-bottom: 15px;
         }
         p {
             color: $color-medium;
+            font-size: $font-size-t4;
+            line-height: 30px;
+            padding-bottom: 30px;
         }
+        a {
+            color: $color-button;
+            font-size: $font-size-button;
+            line-height: 45px;
+        }
+    
     }
 
     &--section2 {

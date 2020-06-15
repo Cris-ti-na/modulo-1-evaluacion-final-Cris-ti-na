@@ -338,6 +338,7 @@ header, main, footer {
     width: 44px;
     background-color: #0271bc;
     display: inline-block;
+    top: 0;
     position: fixed;
     align-items: center;
     justify-content: center; }
@@ -373,7 +374,7 @@ header, main, footer {
       border-radius: 50%;
       background-color: white; }
       .page__header--hero a img {
-        padding-top: 13px; }
+        padding-top: 18px; }
 
 .page__main {
   display: flex;
@@ -383,11 +384,22 @@ header, main, footer {
     padding: 30px 15px 45px 15px; }
     .page__main--section1 small {
       color: #8ccbea;
+      font-size: 14px;
+      line-height: 30px;
       text-transform: capitalize; }
     .page__main--section1 h2 {
-      font-size: 24px; }
+      font-size: 24px;
+      line-height: 30px;
+      padding-bottom: 15px; }
     .page__main--section1 p {
-      color: #4a4a4a; }
+      color: #4a4a4a;
+      font-size: 18px;
+      line-height: 30px;
+      padding-bottom: 30px; }
+    .page__main--section1 a {
+      color: #f26002;
+      font-size: 20px;
+      line-height: 45px; }
   .page__main--section2 {
     background-color: #eff9ff;
     padding: 30px 15px 60px 15px; }
@@ -397,13 +409,39 @@ header, main, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
+  @media all and (min-width: 768px) {
+    .page__footer {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      align-items: start;
+      padding: 45px 39px; } }
   .page__footer--llinks, .page__footer--rlinks {
     text-transform: uppercase;
     line-height: 30px;
-    color: white; }
-  .page__footer--llinks {
-    padding-top: 73px;
+    color: white;
     padding-bottom: 30px; }
+    @media all and (min-width: 768px) {
+      .page__footer--llinks, .page__footer--rlinks {
+        padding-bottom: 0;
+        order: 2; } }
+  .page__footer--llinks {
+    padding-top: 73px; }
+    @media all and (min-width: 768px) {
+      .page__footer--llinks {
+        padding-top: 0; } }
+  .page__footer--info {
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    padding-bottom: 45px; }
+    .page__footer--info .heart {
+      color: #f26002; }
+    @media all and (min-width: 768px) {
+      .page__footer--info {
+        order: 1;
+        padding-bottom: 0; } }
 
 /*# sourceMappingURL=main.css.map */

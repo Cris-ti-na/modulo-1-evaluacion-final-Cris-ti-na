@@ -7,7 +7,8 @@
     height: 44px;
     width: 44px;
     background-color: $color-menu;
-    display: inline-block;    
+    display: inline-block;
+    top: 0;    
     position: fixed;
     align-items: center;
     justify-content: center;
@@ -57,7 +58,8 @@
       background-color: $color-secondary;
       
       img {
-        padding-top: 13px;
+        padding-top: 18px;
+        
       }
     }
 
