@@ -5,34 +5,120 @@
     
     &--section1 {
         padding: 30px 15px 45px 15px;
+
+        @include forTablet {
+            padding: 30px 40px 60px 40px;
+        }
+
+        @include forPc {
+            padding: 60px 265px;
+        }
+
+
         
         small {
             color: $color-aux;
             font-size: $font-size-small;
             line-height: 30px;
             text-transform: capitalize;
+            
+            @include forPc {
+                font-size: $font-size;
+            }
         }
+
         h2 {
             font-size: $font-size-t3;
             line-height: 30px;
             padding-bottom: 15px;
+            text-transform: capitalize;
+
+            @include forTablet {
+                font-size: $font-size-t2;
+                line-height: 45px;
+                padding-bottom: 30px;
+            }
+
+            @include forPc {
+                font-size: $font-size-t1;
+            }
         }
+
         p {
             color: $color-medium;
             font-size: $font-size-t4;
             line-height: 30px;
             padding-bottom: 30px;
+
+            @include forTablet {
+                font-size: $font-size-button;
+            }
+
+            @include forPc {
+                font-size: $font-size-button;
+            }
         }
+
         a {
             color: $color-button;
+            text-transform: capitalize;
             font-size: $font-size-button;
+            font-weight: 500;
             line-height: 45px;
         }
     
     }
 
     &--section2 {
+        margin: 0;
+        width: 100vw;
         background-color: $color-bk1;
-        padding: 30px 15px 60px 15px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        text-align: center;
+
+        @include forPc {
+            padding-top: 60px;
+        }
+
+        h2 {
+            font-size: $font-size-t3;
+            line-height: 30;
+            text-transform: capitalize;
+            padding-bottom: 45px;
+
+            @include forTablet {
+                font-size: $font-size-t2;
+                line-height: 45px;
+            }
+
+            @include forPc {
+                font-size: $font-size-t1;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 8%;
+
+            &__art1 {
+                grid-row: 1/2;
+                margin-top: 0;
+            }
+
+            &__art2 {
+                grid-row: 2/3;
+            }
+
+            &__art3 {
+                grid-row: 3/4;
+            }
+        }
+
+        a {
+            font-weight: 500;
+        }
     }
 }

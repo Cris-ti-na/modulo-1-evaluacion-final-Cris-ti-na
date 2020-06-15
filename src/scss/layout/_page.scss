@@ -1,7 +1,8 @@
 html {
   font-size: $font-size;
   font-family: $font-primary;
-
+  font-weight: 400;
+  
   h1, h2, h3, h4 {
     font-family: $font-secondary;
     text-transform: capitalize;
